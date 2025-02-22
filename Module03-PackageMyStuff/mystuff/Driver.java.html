@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Driver.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #6aab73;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Driver.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">mystuff</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">Driver </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s3">// Creating an iPhone object</span>
+        <span class="s1">MyStuff myiPhone </span><span class="s2">= </span><span class="s0">new </span><span class="s1">MyStuff</span><span class="s2">(</span><span class="s4">&quot;iPhone 13&quot;</span><span class="s2">, </span><span class="s5">256</span><span class="s2">, </span><span class="s4">&quot;Midnight&quot;</span><span class="s2">);</span>
+
+        <span class="s3">// Using methods</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Model: &quot; </span><span class="s2">+ </span><span class="s1">myiPhone</span><span class="s2">.</span><span class="s1">getModelName</span><span class="s2">());</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Storage: &quot; </span><span class="s2">+ </span><span class="s1">myiPhone</span><span class="s2">.</span><span class="s1">getStorage</span><span class="s2">() + </span><span class="s4">&quot;GB&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Color: &quot; </span><span class="s2">+ </span><span class="s1">myiPhone</span><span class="s2">.</span><span class="s1">getColor</span><span class="s2">());</span>
+
+        <span class="s3">// Turning on the iPhone</span>
+        <span class="s1">myiPhone</span><span class="s2">.</span><span class="s1">turnOn</span><span class="s2">();</span>
+
+        <span class="s3">// Checking the status</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">myiPhone</span><span class="s2">.</span><span class="s1">isOn</span><span class="s2">()) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Your iPhone is ready to use.&quot;</span><span class="s2">);</span>
+        <span class="s2">}</span>
+
+        <span class="s3">// Turning off the iPhone</span>
+        <span class="s1">myiPhone</span><span class="s2">.</span><span class="s1">turnOff</span><span class="s2">();</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
